@@ -1,0 +1,48 @@
+{
+    "Groups":[
+       {
+          "Name":"Main",
+          "DisplayName":"Configuration",
+          "Elements":
+          [
+             {
+                "Name":"IncludeDir0",
+                "DisplayName":"Werehog Palette Edits",
+                "Description":[
+                   "A setting that allows you to swap the textures",
+                ],
+                "Type":"WerehogSkins",
+                "MinValue":null,
+                "MaxValue":null,
+                "DefaultValue":true
+             },
+          ]
+       }
+    ],
+    "Enums":{
+       "WerehogSkins":[
+          {
+             "DisplayName":"Default",
+             "Value":"skin_w_default",
+             "Description":[
+                "The default palette for the werehog",
+             ]
+          },
+          {
+             "DisplayName":"MelohLike",
+             "Value":"skin_w_meloh",
+             "Description":[
+                "Edits the texture to be closer to MelohRush's retexture mod.",
+             ]
+          },
+          {
+            "DisplayName":"Bluer Default",
+             "Value":"skin_w_bluey",
+             "Description":[
+                "Edits the palette to keep Sonic's blue skin while adding the darker blue.",
+             ]
+          }
+       ],
+    },
+    "IniFile":"mod.ini"
+ }
