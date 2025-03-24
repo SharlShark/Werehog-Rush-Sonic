@@ -1,7 +1,9 @@
-add mod.ini
 add configrush.json
 add imp_basic/+EvilSonic.ar.00
 add imp_basic/+EvilSonic.arl
 add skin_w_default/dontread.txt
 add skin_w_meloh/+EvilSonic.ar.00
 add skin_w_meloh/+EvilSonic.arl
+add skin_w_bluey/+EvilSonic.ar.00
+add skin_w_bluey/+EvilSonic.arl
+add mod.ini

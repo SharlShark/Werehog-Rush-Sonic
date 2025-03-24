@@ -35,6 +35,13 @@
                 "Edits the texture to be closer to MelohRush's retexture mod.",
              ]
           },
+          {
+            "DisplayName":"Bluer Default",
+             "Value":"skin_w_bluey",
+             "Description":[
+                "Edits the palette to keep Sonic's blue skin while adding the darker blue.",
+             ]
+          }
        ],
     },
     "IniFile":"mod.ini"
