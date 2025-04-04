@@ -1,48 +1,101 @@
 {
-    "Groups":[
-       {
-          "Name":"Main",
-          "DisplayName":"Configuration",
-          "Elements":
-          [
-             {
-                "Name":"IncludeDir0",
-                "DisplayName":"Werehog Palette Edits",
-                "Description":[
-                   "A setting that allows you to swap the textures",
-                ],
-                "Type":"WerehogSkins",
-                "MinValue":null,
-                "MaxValue":null,
-                "DefaultValue":true
-             },
-          ]
-       }
-    ],
-    "Enums":{
-       "WerehogSkins":[
-          {
-             "DisplayName":"Default",
-             "Value":"skin_w_default",
-             "Description":[
-                "The default palette for the werehog",
-             ]
-          },
-          {
-             "DisplayName":"MelohLike",
-             "Value":"skin_w_meloh",
-             "Description":[
-                "Edits the texture to be closer to MelohRush's retexture mod.",
-             ]
-          },
-          {
-            "DisplayName":"Bluer Default",
-             "Value":"skin_w_bluey",
-             "Description":[
-                "Edits the palette to keep Sonic's blue skin while adding the darker blue.",
-             ]
-          }
-       ],
-    },
-    "IniFile":"mod.ini"
- }
+   "Groups": [
+      {
+         "Name": "Main",
+         "DisplayName": "Configuration",
+         "Elements": [
+            {
+               "Name": "IncludeDir0",
+               "DisplayName": "Palette Edits",
+               "Description": [
+                  "Allows you to swap the textures used for the model",
+               ],
+               "Type": "WerehogSkins",
+               "MinValue": null,
+               "MaxValue": null,
+               "DefaultValue": true
+            },
+            {
+               "Name": "IncludeDir1",
+               "DisplayName": "Material Type",
+               "Description": [
+                  "Changes the material to a different type, changing how sonic appears in game."
+               ],
+               "Type": "WerehogMaterial",
+               "MinValue": null,
+               "MaxValue": null,
+               "DefaultValue": true
+            },
+            {
+               "Name": "IncludeDir2",
+               "DisplayName": "Outlines (Model)",
+               "Description": [
+                  "Changes the model, currently just swapping wether or not it includes the outline. This setting may change to just generally edit the model later, but will always have the outline options"
+               ],
+               "Type": "WerehogModel",
+               "MinValue": null,
+               "MaxValue": null,
+               "DefaultValue": true
+            }
+         ]
+      }
+   ],
+   "Enums": {
+      "WerehogSkins": [
+         {
+            "DisplayName": "Default",
+            "Value": "skin_w_default",
+            "Description": [
+               "The default palette for the werehog",
+            ]
+         },
+         {
+            "DisplayName": "MelohLike",
+            "Value": "skin_w_meloh",
+            "Description": [
+               "Edits the texture to be more blue, with white hands and a tan muzzle + torso circle. Based on MelohRush's retexture mod.",
+            ]
+         },
+         {
+            "DisplayName": "Bluer Default",
+            "Value": "skin_w_bluey",
+            "Description": [
+               "Edits the palette to keep the werehog's blue skin while adding the darker blue fur. Suggested by CODEX0827",
+            ]
+         }
+      ],
+      "WerehogMaterial": [
+         {
+            "DisplayName": "IgnoreLight_d",
+            "Value": "mat_basic",
+            "Description": [
+               "Uses IgnoreLight_d, removing shading from the Werehog.",
+            ]
+         },
+         {
+            "DisplayName": "Shaded",
+            "Value": "mat_shaded",
+            "Description": [
+               "Gives the werehog shading"
+            ]
+         }
+      ],
+      "WerehogModel": [
+         {
+            "DisplayName": "Outline Enabled",
+            "Value": "mod_basic",
+            "Description": [
+               "An outline will surround the Werehog",
+            ]
+         },
+         {
+            "DisplayName": "Outline Disabled",
+            "Value": "mod_noline",
+            "Description": [
+               "An outline will NOT surround the Werehog",
+            ]
+         }
+      ]
+   },
+   "IniFile": "mod.ini"
+}
